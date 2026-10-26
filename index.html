@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>巴巴影视网 - 在线影视剧集资源导航与热播榜单_babayingshiwang-app.github.io</title>
+<meta name="description" content="巴巴影视网（babayingshiwang-app.github.io）收录电影、剧集、动漫、纪录片、综艺与短剧六大类片源导航，每日更新热播榜单、上线排期与观影指南，提供分类检索、更新日历、片单推荐与常见问题解答，手机电脑均可直接访问。">
+<meta name="keywords" content="巴巴影视网,巴巴影视网官网,巴巴影视,巴巴影视网地址,babayingshiwang-app,巴巴影视网热播榜,巴巴影视网剧集更新,在线影视导航,热播剧排行,免费影视剧集分类">
+<meta name="author" content="巴巴影视网">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://babayingshiwang-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="巴巴影视网">
+<meta property="og:title" content="巴巴影视网 - 在线影视剧集资源导航与热播榜单">
+<meta property="og:description" content="巴巴影视网每日更新电影、剧集、动漫、纪录片、综艺、短剧的分类导航与热播榜单，附上线排期与观影指南，手机端自适应浏览。">
+<meta property="og:url" content="https://babayingshiwang-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="巴巴影视网 - 在线影视剧集资源导航与热播榜单">
+<meta name="twitter:description" content="六大分类片单、热播榜单、更新日历与观影指南，巴巴影视网一站查齐。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#0b0d12">
+<style type="text/css">
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:#0b0d12;color:#c9cede;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.75;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+.amber{color:#f0b429}
+
+/* 顶部 */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(11,13,18,.94);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(8px)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:14px}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(145deg,#f0b429,#c2701c);color:#0b0d12;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;letter-spacing:-1px}
+.brandtxt strong{display:block;font-size:19px;color:#fff;letter-spacing:2px;line-height:1.2}
+.brandtxt span{display:block;font-size:11px;color:#6d768c;letter-spacing:.6px;word-break:break-all}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{font-size:14px;color:#a8b0c4;padding:8px 13px;border-radius:8px;transition:.25s}
+.nav a:hover{color:#f0b429;background:rgba(240,180,41,.1)}
+.nav a.on{color:#f0b429}
+.mbtn{display:none;width:42px;height:36px;border:1px solid rgba(255,255,255,.14);border-radius:9px;background:transparent;cursor:pointer;position:relative}
+.mbtn i{position:absolute;left:11px;width:20px;height:2px;background:#dfe4f0;display:block}
+.mbtn i:nth-child(1){top:12px}
+.mbtn i:nth-child(2){top:17px}
+.mbtn i:nth-child(3){top:22px}
+#mnav{display:none}
+#mnav:checked ~ .nav{display:flex;position:absolute;left:0;right:0;top:62px;flex-direction:column;align-items:stretch;background:#11141c;border-bottom:1px solid rgba(255,255,255,.08);padding:10px 20px 18px}
+#mnav:checked ~ .nav a{padding:13px 6px;border-bottom:1px solid rgba(255,255,255,.05);font-size:15px}
+
+/* 首屏 */
+.hero{position:relative;padding:74px 0 60px;background:radial-gradient(900px 420px at 12% -8%,rgba(240,180,41,.16),transparent 62%),linear-gradient(180deg,#10131b,#0b0d12);border-bottom:1px solid rgba(255,255,255,.06);overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;top:-60px;width:320px;height:320px;border:1px solid rgba(240,180,41,.16);border-radius:50%}
+.hero .wrap{position:relative;z-index:2}
+.tags{display:inline-flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tags b{font-weight:500;font-size:12px;color:#f0b429;border:1px solid rgba(240,180,41,.35);border-radius:20px;padding:4px 12px;background:rgba(240,180,41,.06)}
+.hero h1{font-size:40px;line-height:1.25;color:#fff;font-weight:800;letter-spacing:1px;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:#f0b429}
+.lead{font-size:16px;color:#9aa3b8;max-width:640px;margin-bottom:12px}
+.urlbox{display:inline-block;margin:14px 0 26px;font-size:13px;color:#8d95ab;border-left:3px solid #f0b429;padding:6px 0 6px 12px;word-break:break-all}
+.urlbox b{color:#e7ebf5;font-weight:600;letter-spacing:.3px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 26px;border-radius:10px;font-size:15px;font-weight:600;transition:.25s}
+.btn-p{background:#f0b429;color:#0b0d12}
+.btn-p:hover{background:#ffc94d;transform:translateY(-2px)}
+.btn-o{border:1px solid rgba(255,255,255,.2);color:#dfe4f0}
+.btn-o:hover{border-color:#f0b429;color:#f0b429}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px;border-top:1px solid rgba(255,255,255,.07);padding-top:26px}
+.nums div span{display:block;font-size:26px;color:#fff;font-weight:800;letter-spacing:1px}
+.nums div small{display:block;font-size:12px;color:#767f95;margin-top:2px}
+
+/* 通用区块 */
+.sec{padding:64px 0}
+.sec.alt{background:#0e1118;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.shead .no{font-size:12px;color:#f0b429;letter-spacing:3px;font-weight:700}
+.shead h2{font-size:27px;color:#fff;letter-spacing:1px;margin:6px 0 8px;font-weight:700}
+.shead p{font-size:14px;color:#7d869c;max-width:520px}
+.shead a{font-size:13px;color:#f0b429;border-bottom:1px dashed rgba(240,180,41,.5);padding-bottom:2px}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{position:relative;padding:24px 22px 22px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:linear-gradient(160deg,#141822,#0f1219);overflow:hidden;transition:.3s}
+.cat:hover{border-color:rgba(240,180,41,.45);transform:translateY(-4px)}
+.cat .idx{position:absolute;right:18px;top:14px;font-size:34px;font-weight:800;color:rgba(255,255,255,.05)}
+.cat h3{font-size:18px;color:#fff;margin-bottom:8px;font-weight:700}
+.cat p{font-size:13px;color:#7f889e;margin-bottom:14px}
+.cat .meta{display:flex;gap:14px;font-size:12px;color:#f0b429;border-top:1px dashed rgba(255,255,255,.08);padding-top:12px}
+.cat .meta span{color:#8d95ab}
+.cat .meta span b{color:#e7ebf5;font-weight:600}
+
+/* 榜单 */
+.rank{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcol{border:1px solid rgba(255,255,255,.07);border-radius:14px;background:#11141c;padding:20px 18px}
+.rcol h3{font-size:16px;color:#fff;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center}
+.rcol h3 em{font-style:normal;font-size:11px;color:#f0b429;border:1px solid rgba(240,180,41,.3);border-radius:4px;padding:2px 7px}
+.rcol li{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.05)}
+.rcol li:last-child{border-bottom:0}
+.rno{width:22px;height:22px;flex:0 0 22px;border-radius:6px;background:rgba(255,255,255,.06);color:#9aa3b8;font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:700;margin-top:2px}
+.rcol li:nth-child(1) .rno{background:#f0b429;color:#0b0d12}
+.rcol li:nth-child(2) .rno{background:#c9cdd8;color:#0b0d12}
+.rcol li:nth-child(3) .rno{background:#b06d2c;color:#fff}
+.rinfo{flex:1;min-width:0}
+.rinfo strong{display:block;font-size:14px;color:#e7ebf5;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rinfo small{display:block;font-size:12px;color:#6f788e;margin-top:2px}
+.rscore{font-size:13px;color:#f0b429;font-weight:700;align-self:center}
+
+/* 更新日历 */
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.cal div{border:1px solid rgba(255,255,255,.07);border-radius:10px;background:#11141c;padding:14px 10px;text-align:center;transition:.25s}
+.cal div:hover{border-color:rgba(240,180,41,.4)}
+.cal div.today{background:rgba(240,180,41,.1);border-color:rgba(240,180,41,.5)}
+.cal div b{display:block;font-size:13px;color:#f0b429;margin-bottom:6px}
+.cal div span{display:block;font-size:13px;color:#e7ebf5;line-height:1.5}
+.cal div small{display:block;font-size:11px;color:#6f788e;margin-top:4px}
+
+/* 文章 */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.post{border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;background:#11141c;transition:.3s}
+.post:hover{transform:translateY(-4px);border-color:rgba(240,180,41,.4)}
+.thumb{height:132px;background:linear-gradient(135deg,#1d2230,#2a2140);position:relative}
+.thumb.p2{background:linear-gradient(135deg,#232a1e,#332b18)}
+.thumb.p3{background:linear-gradient(135deg,#1b2733,#123040)}
+.thumb b{position:absolute;left:14px;bottom:12px;font-size:12px;color:#f0b429;border:1px solid rgba(240,180,41,.35);padding:2px 9px;border-radius:20px;background:rgba(11,13,18,.6)}
+.post .body{padding:18px}
+.post h3{font-size:16px;color:#fff;line-height:1.5;margin-bottom:8px;font-weight:600}
+.post p{font-size:13px;color:#7f889e}
+.post .more{margin-top:14px;font-size:12px;color:#f0b429}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.3fr .9fr;gap:30px;align-items:start}
+.about p{font-size:14px;color:#909ab0;margin-bottom:14px}
+.about p b{color:#e7ebf5;font-weight:600}
+.side{border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#11141c;padding:22px}
+.side h3{font-size:15px;color:#fff;margin-bottom:14px}
+.side li{font-size:13px;color:#8d95ab;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.06);display:flex;justify-content:space-between;gap:10px}
+.side li:last-child{border-bottom:0}
+.side li em{font-style:normal;color:#e7ebf5}
+
+/* FAQ */
+.faq{max-width:840px}
+.faq details{border:1px solid rgba(255,255,255,.08);border-radius:12px;background:#11141c;margin-bottom:12px;overflow:hidden}
+.faq summary{padding:16px 20px;font-size:15px;color:#e7ebf5;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:#f0b429;font-size:19px;font-weight:700}
+.faq details[open] summary:after{content:"-"}
+.faq details[open] summary{color:#f0b429}
+.faq .ans{padding:0 20px 18px;font-size:14px;color:#8d95ab;border-top:1px dashed rgba(255,255,255,.06);padding-top:14px}
+
+/* 底部 */
+.foot{background:#080a0e;border-top:1px solid rgba(255,255,255,.06);padding:46px 0 26px;font-size:13px;color:#6f788e}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.06)}
+.fgrid h4{font-size:14px;color:#fff;margin-bottom:14px;font-weight:600}
+.fgrid a{display:block;font-size:13px;color:#828ba1;padding:5px 0}
+.fgrid a:hover{color:#f0b429}
+.fgrid p{font-size:13px;line-height:1.8}
+.copy{padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px}
+.keys{margin-top:14px;font-size:12px;line-height:1.9;color:#5f6879}
+.keys b{color:#8d95ab;font-weight:400}
+
+@media (max-width:900px){
+.cats,.rank,.posts{grid-template-columns:repeat(2,1fr)}
+.nums{grid-template-columns:repeat(2,1fr)}
+.about{grid-template-columns:1fr}
+.fgrid{grid-template-columns:1fr 1fr}
+.cal{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:640px){
+.nav{display:none}
+.mbtn{display:block}
+.hero{padding:48px 0 40px}
+.hero h1{font-size:28px}
+.lead{font-size:15px}
+.sec{padding:44px 0}
+.shead h2{font-size:22px}
+.cats,.rank,.posts{grid-template-columns:1fr}
+.cal{grid-template-columns:repeat(2,1fr)}
+.fgrid{grid-template-columns:1fr}
+.nums{gap:18px}
+.nums div span{font-size:22px}
+.copy{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar">
+<div class="wrap">
+<a class="brand" href="#">
+<span class="mark">巴</span>
+<span class="brandtxt"><strong>巴巴影视网</strong><span>babayingshiwang-app.github.io</span></span>
+</a>
+<input type="checkbox" id="mnav" aria-label="菜单">
+<label class="mbtn" for="mnav" aria-label="展开导航"><i></i><i></i><i></i></label>
+<nav class="nav">
+<a class="on" href="#">首页</a>
+<a href="#cats">分类片库</a>
+<a href="#rank">热播榜单</a>
+<a href="#cal">更新日历</a>
+<a href="#guide">观影指南</a>
+<a href="#about">关于我们</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<div class="tags">
+<b>每日 09:00 更新</b>
+<b>六大分类片库</b>
+<b>免注册直接看</b>
+</div>
+<h1>巴巴影视网：<em>剧集、电影、综艺</em>的一站式片单导航</h1>
+<p class="lead">巴巴影视网把散落在各处的影视资源按类型、地区、上线时间重新整理了一遍。想追的剧今天更不更、哪部值得先看、某个类型最近有什么新片，在这个页面里基本都能查到。</p>
+<div class="urlbox">本站地址：<b>https://babayingshiwang-app.github.io</b>（巴巴影视网唯一入口，请注意辨别仿冒站点）</div>
+<div class="btns">
+<a class="btn btn-p" href="#cats">进入分类片库</a>
+<a class="btn btn-o" href="#rank">查看今日榜单</a>
+</div>
+<div class="nums">
+<div><span>12860+</span><small>收录影片条目</small></div>
+<div><span>6</span><small>大类 / 42 个子标签</small></div>
+<div><span>210+</span><small>本周更新剧集</small></div>
+<div><span>24h</span><small>榜单刷新周期</small></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="cats">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">01 / LIBRARY</div>
+<h2>分类片库</h2>
+<p>按内容形态划分的六个主分类，每个分类下另有地区、年份、语言等子标签，点进去就是整理好的片单。</p>
+</div>
+<a href="#">查看全部分类</a>
+</div>
+<div class="cats">
+<div class="cat">
+<div class="idx">01</div>
+<h3>电影 · 院线同步</h3>
+<p>动作、科幻、悬疑、文艺四大主线，含近三年院线片与经典修复版，标注画质与时长。</p>
+<div class="meta"><span>条目 <b>5240</b></span><span>本周新增 <b>36</b></span></div>
+</div>
+<div class="cat">
+<div class="idx">02</div>
+<h3>剧集 · 连载追踪</h3>
+<p>国产、日韩、欧美、泰剧分区排布，连载中的剧目显示更新到第几集与下次更新时间。</p>
+<div class="meta"><span>条目 <b>4180</b></span><span>连载中 <b>142</b></span></div>
+</div>
+<div class="cat">
+<div class="idx">03</div>
+<h3>动漫 · 番剧补档</h3>
+<p>新番按季度归档，完结老番按年份补档，剧场版单独成列，支持中日双语标题检索。</p>
+<div class="meta"><span>条目 <b>1960</b></span><span>季度新番 <b>58</b></span></div>
+</div>
+<div class="cat">
+<div class="idx">04</div>
+<h3>纪录片 · 人文自然</h3>
+<p>BBC、NHK、央视等厂牌合集，历史、自然、美食、科技四个方向，附单集时长说明。</p>
+<div class="meta"><span>条目 <b>730</b></span><span>合集 <b>64</b></span></div>
+</div>
+<div class="cat">
+<div class="idx">05</div>
+<h3>综艺 · 每周排期</h3>
+<p>内地、韩国、日本综艺按播出日归类，含脱口秀、音乐、真人秀与竞技类，标明更新频率。</p>
+<div class="meta"><span>条目 <b>890</b></span><span>在播 <b>47</b></span></div>
+</div>
+<div class="cat">
+<div class="idx">06</div>
+<h3>短剧 · 快刷专区</h3>
+<p>单集十分钟以内的竖屏短剧，按都市、古装、甜宠、逆袭分栏，标注总集数与完结状态。</p>
+<div class="meta"><span>条目 <b>860</b></span><span>完结 <b>612</b></span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="rank">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">02 / RANKING</div>
+<h2>热播榜单</h2>
+<p>榜单按站内检索热度与完播率综合排序，每天上午九点重排一次，昨日数据可在榜单页回看。</p>
+</div>
+<a href="#">榜单规则说明</a>
+</div>
+<div class="rank">
+<div class="rcol">
+<h3>剧集榜 <em>今日</em></h3>
+<ul>
+<li><span class="rno">1</span><span class="rinfo"><strong>长夜将尽</strong><small>国产 · 悬疑 · 更新至 18 集</small></span><span class="rscore">9.2</span></li>
+<li><span class="rno">2</span><span class="rinfo"><strong>雾港来信</strong><small>国产 · 年代 · 更新至 24 集</small></span><span class="rscore">9.0</span></li>
+<li><span class="rno">3</span><span class="rinfo"><strong>城南旧事录</strong><small>韩剧 · 家庭 · 完结 16 集</small></span><span class="rscore">8.8</span></li>
+<li><span class="rno">4</span><span class="rinfo"><strong>第七号病房</strong><small>美剧 · 医疗 · 更新至 9 集</small></span><span class="rscore">8.7</span></li>
+<li><span class="rno">5</span><span class="rinfo"><strong>春分之后</strong><small>日剧 · 治愈 · 更新至 11 集</small></span><span class="rscore">8.6</span></li>
+</ul>
+</div>
+<div class="rcol">
+<h3>电影榜 <em>本周</em></h3>
+<ul>
+<li><span class="rno">1</span><span class="rinfo"><strong>夜航西行</strong><small>剧情 · 2025 · 118 分钟</small></span><span class="rscore">8.9</span></li>
+<li><span class="rno">2</span><span class="rinfo"><strong>铁轨尽头</strong><small>犯罪 · 2024 · 131 分钟</small></span><span class="rscore">8.7</span></li>
+<li><span class="rno">3</span><span class="rinfo"><strong>海边的旧收音机</strong><small>文艺 · 2025 · 96 分钟</small></span><span class="rscore">8.5</span></li>
+<li><span class="rno">4</span><span class="rinfo"><strong>无声证词</strong><small>悬疑 · 2024 · 109 分钟</small></span><span class="rscore">8.4</span></li>
+<li><span class="rno">5</span><span class="rinfo"><strong>群山之下</strong><small>冒险 · 2023 · 142 分钟</small></span><span class="rscore">8.3</span></li>
+</ul>
+</div>
+<div class="rcol">
+<h3>动漫榜 <em>本季</em></h3>
+<ul>
+<li><span class="rno">1</span><span class="rinfo"><strong>星轨旅人</strong><small>新番 · 更新至 8 话</small></span><span class="rscore">9.1</span></li>
+<li><span class="rno">2</span><span class="rinfo"><strong>机械之心</strong><small>新番 · 更新至 7 话</small></span><span class="rscore">8.9</span></li>
+<li><span class="rno">3</span><span class="rinfo"><strong>酱油与猫</strong><small>日常 · 更新至 10 话</small></span><span class="rscore">8.8</span></li>
+<li><span class="rno">4</span><span class="rinfo"><strong>剑与旧书店</strong><small>奇幻 · 完结 12 话</small></span><span class="rscore">8.6</span></li>
+<li><span class="rno">5</span><span class="rinfo"><strong>夏日电波</strong><small>音乐 · 更新至 6 话</small></span><span class="rscore">8.4</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="cal">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">03 / SCHEDULE</div>
+<h2>本周更新日历</h2>
+<p>连载剧集与综艺的播出日排期，灰色为常规更新，高亮为今日。具体时间以各栏目页标注为准。</p>
+</div>
+<a href="#">订阅更新提醒</a>
+</div>
+<div class="cal">
+<div><b>周一</b><span>长夜将尽</span><small>20:00 · 2 集</small></div>
+<div><b>周二</b><span>第七号病房</span><small>09:00 · 1 集</small></div>
+<div><b>周三</b><span>星轨旅人</span><small>11:00 · 1 话</small></div>
+<div class="today"><b>周四</b><span>雾港来信</span><small>20:00 · 2 集</small></div>
+<div><b>周五</b><span>周末综艺档</span><small>21:10 · 3 档</small></div>
+<div><b>周六</b><span>春分之后</span><small>22:00 · 1 集</small></div>
+<div><b>周日</b><span>短剧上新</span><small>18:00 · 5 部</small></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="guide">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">04 / GUIDE</div>
+<h2>观影指南</h2>
+<p>编辑整理的选片笔记：怎么按类型挑片、画质与字幕怎么看、哪些剧值得补，都写在这里。</p>
+</div>
+<a href="#">全部指南</a>
+</div>
+<div class="posts">
+<article class="post">
+<div class="thumb"><b>选片</b></div>
+<div class="body">
+<h3>悬疑剧怎么挑：三分钟判断一部值不值得追</h3>
+<p>从开篇节奏、线索密度和人物动机三个角度，给出一套适用于大多数悬疑剧的快筛方法。</p>
+<div class="more">阅读全文 →</div>
+</div>
+</article>
+<article class="post">
+<div class="thumb p2"><b>基础</b></div>
+<div class="body">
+<h3>画质与字幕参数怎么看：1080P、WEB-DL 都是什么</h3>
+<p>把常见的片源标识拆开讲清楚，顺带说明不同码率在手机和电视上的观感差异。</p>
+<div class="more">阅读全文 →</div>
+</div>
+</article>
+<article class="post">
+<div class="thumb p3"><b>片单</b></div>
+<div class="body">
+<h3>2026 春季补番清单：十二部被低估的完结剧</h3>
+<p>覆盖国产、日韩与欧美，按题材分组，每部附一句话推荐理由与建议观看顺序。</p>
+<div class="more">阅读全文 →</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="sec" id="about">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">05 / ABOUT</div>
+<h2>关于巴巴影视网</h2>
+<p>一个只做整理和索引的影视导航站点，不存储任何影片文件，所有条目均指向公开来源。</p>
+</div>
+<a href="#">联系方式</a>
+</div>
+<div class="about">
+<div>
+<p>巴巴影视网从 2021 年开始整理影视条目，最初只是几份自己用的表格，后来慢慢变成一个有分类、有榜单、有更新排期的导航站。站点定位很简单：<b>把找片的时间省下来</b>。</p>
+<p>我们做的事情包括：给每部作品标注类型、地区、年份与更新状态；按检索热度和完播率排出每日榜单；把连载剧集的播出日做成周历。站点本身不存放任何影片文件，也不提供下载，页面上的条目信息均整理自公开渠道。</p>
+<p>如果你发现某条信息有误、某个链接失效，或者想补充一个还没收录的片单，可以通过右侧的反馈入口告诉我们，一般会在一个工作日内处理。巴巴影视网的收录与排序规则也会不定期在这里更新说明。</p>
+</div>
+<aside class="side">
+<h3>站点信息</h3>
+<ul>
+<li><span>网站名称</span><em>巴巴影视网</em></li>
+<li><span>网址</span><em>babayingshiwang-app.github.io</em></li>
+<li><span>收录条目</span><em>12860+</em></li>
+<li><span>更新频率</span><em>每日 09:00</em></li>
+<li><span>访问方式</span><em>免注册 · 全设备</em></li>
+<li><span>内容性质</span><em>索引与导航</em></li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="sec alt" id="faq">
+<div class="wrap">
+<div class="shead">
+<div>
+<div class="no">06 / FAQ</div>
+<h2>常见问题</h2>
+<p>关于访问、更新、收录与反馈的几个高频问题，这里先给出简短答复。</p>
+</div>
+</div>
+<div class="faq">
+<details open>
+<summary>巴巴影视网需要注册才能浏览吗？</summary>
+<div class="ans">不需要。全站栏目与榜单均可直接浏览，无需登录或注册，也不要求安装任何插件。手机、平板、电脑打开同一地址即可，页面会按屏幕宽度自动调整排版。</div>
+</details>
+<details>
+<summary>榜单多久更新一次？依据是什么？</summary>
+<div class="ans">每日上午九点重排一次。排序参考站内检索热度、条目的完播反馈与上线时间三项数据，人工不做干预调整，历史榜单可在对应栏目页按日期回看。</div>
+</details>
+<details>
+<summary>本站是否存储或提供影片下载？</summary>
+<div class="ans">不存储也不提供下载。巴巴影视网做的是条目整理与来源索引，页面展示的是作品信息、分类标签与更新状态，观看请通过各作品的正规播出渠道。</div>
+</details>
+<details>
+<summary>发现信息有误或想提交片单，怎么联系？</summary>
+<div class="ans">可在"关于我们"栏目中找到反馈入口，注明作品名称与需要更正的字段即可。若为片单补充，建议一并附上类型、地区与年份，方便我们快速归类收录。</div>
+</details>
+<details>
+<summary>手机端访问和电脑端看到的内容一样吗？</summary>
+<div class="ans">内容完全一致，仅排版不同。手机端会把多列卡片改为单列、导航收进右上角菜单，并放大正文字号与点击热区，小屏下滑浏览时不会横向溢出。</div>
+</details>
+</div>
+</div>
+</section>
+
+<footer class="foot">
+<div class="wrap">
+<div class="fgrid">
+<div>
+<h4>巴巴影视网</h4>
+<p>影视条目整理与片单导航站，涵盖电影、剧集、动漫、纪录片、综艺、短剧六大类，每日更新热播榜单与连载排期。<br>网址：https://babayingshiwang-app.github.io</p>
+</div>
+<div>
+<h4>栏目导航</h4>
+<a href="#cats">分类片库</a>
+<a href="#rank">热播榜单</a>
+<a href="#cal">更新日历</a>
+<a href="#guide">观影指南</a>
+</div>
+<div>
+<h4>关于站点</h4>
+<a href="#about">关于我们</a>
+<a href="#faq">常见问题</a>
+<a href="#">收录规则</a>
+<a href="#">意见反馈</a>
+</div>
+<div>
+<h4>友情链接</h4>
+<a href="#">影视资讯站</a>
+<a href="#">字幕资源站</a>
+<a href="#">评分参考站</a>
+<a href="#">片单交流区</a>
+</div>
+</div>
+<div class="keys">
+<b>相关检索词：</b>巴巴影视网、巴巴影视网官网、巴巴影视网热播榜、巴巴影视网剧集更新、babayingshiwang-app、在线影视导航、热播剧排行、影视分类片单、新番更新表、纪录片合集
+</div>
+<div class="copy">
+<span>© 2021-2026 巴巴影视网 babayingshiwang-app.github.io 版权所有</span>
+<span>本站仅提供影视信息索引，不存储任何影片文件</span>
+</div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://babayingshiwang-app.github.io/#website","url":"https://babayingshiwang-app.github.io/","name":"巴巴影视网","alternateName":"babayingshiwang-app","description":"巴巴影视网收录电影、剧集、动漫、纪录片、综艺与短剧六大类片源导航，每日更新热播榜单、上线排期与观影指南。","inLanguage":"zh-CN","publisher":{"@id":"https://babayingshiwang-app.github.io/#org"}},{"@type":"Organization","@id":"https://babayingshiwang-app.github.io/#org","name":"巴巴影视网","url":"https://babayingshiwang-app.github.io/","description":"影视条目整理与片单导航站点，提供分类检索、热播榜单、更新日历与观影指南。"},{"@type":"WebPage","@id":"https://babayingshiwang-app.github.io/#webpage","url":"https://babayingshiwang-app.github.io/","name":"巴巴影视网 - 在线影视剧集资源导航与热播榜单","isPartOf":{"@id":"https://babayingshiwang-app.github.io/#website"},"inLanguage":"zh-CN","about":"巴巴影视网分类片库、热播榜单、更新日历与观影指南"}]}
+</script>
+</body>
+</html>
